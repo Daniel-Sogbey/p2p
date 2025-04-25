@@ -154,6 +154,7 @@ func handleFileRequest(conn net.Conn) {
 			fmt.Println("", err)
 			return
 		}
+
 	}
 
 	fmt.Println("File sent successfully:", requestedFile)
@@ -217,7 +218,6 @@ func requestFile(fileName string) {
 		}
 		totalBytes += int64(bytesRead)
 		bar.Add(bytesRead)
-
 	}
 }
 
